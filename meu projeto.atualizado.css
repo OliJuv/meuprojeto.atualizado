@@ -1,0 +1,277 @@
+:root {
+ --text-color: #e0e0e0;
+--bg-color: #1a1a1a;
+--primary-gray: #2d2d2d;
+--secondary-gray: #3a3a3a;
+--border: 0.1rem solid rgba(255, 255, 255, 0.2);
+--hover-color: #4a4a4a;
+}
+
+* {
+ margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Open Sans", sans-serif;
+}
+
+header {
+background-color: var(--bg-color);
+border-bottom: var(--border);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 40px;
+}
+
+header img {
+width:80px;
+}
+
+header nav ul {
+display: flex;
+gap: 25px;
+list-style: none;
+align-items: center;    
+}
+
+header nav ul  {
+text-decoration: none;
+color: var(--text-color);
+font-weight: 500;
+transition: all 0.3s ease;
+}
+
+header nav ul a:hover {
+color: #fff;
+border-bottom: 2px solid #fff;
+}
+
+/* Botões no cabeçalho */
+.container-buttons {
+display: flex;
+gap: 15px;
+}
+
+.container-buttons button {
+cursor: pointer;
+border: none;
+outline: none;
+font-size: 1.2em;
+border-radius: 24px;
+padding: 8px 16px;
+background-color: var(--primary-gray);
+color: var(--text-color);
+transition: all 0.3s ease;
+}
+
+.container-buttons button:hover {
+background-color: var(--hover-color);
+color: #fff;
+}
+
+/*Carrossel*/
+.carrossel-servicos {
+max-width: 1300px;
+margin: 80px auto;
+}
+
+.carrossel-servicos h2 {
+font-size: 2.5em;
+color: var(--text-color);
+margin-bottom: 10px;
+}
+
+.carrossel-servicos span {
+color: var(--secondary-gray);
+}
+
+.mySwiper {
+width: 100%;
+height: 30rem;
+box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+border-radius: 20px;
+background-color: var(--primary-gray);
+overflow: hidden;
+transition: transform 0.3s ease;
+}
+
+.mySwiper:hover {
+transform: scale(1.02);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+background: rgba(255, 255, 255, 0.2);
+border-radius: 50%;
+padding: 10px;
+transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+background: rgba(255, 255, 255, 0.4);
+}
+
+/*SOBRE NÓS*/
+.about {
+max-width: 1300px;
+margin: 200px auto 50px;
+display: flex;
+justify-content: space-between;
+padding: 25px;
+gap: 40px;
+}
+
+.about-text {
+flex: 1;
+}
+
+.about-text h1 {
+font-size: 3.2rem;
+line-height: 1.2;
+margin-bottom: 20px;
+}
+
+.about-text h1 span {
+color: #fff;
+}
+
+.about-text p {
+color: #ccc;
+line-height: 1.6;
+margin-bottom: 15px;
+font-size: 1.2rem;
+}
+
+.about img {
+width: 100%;
+max-width: 600px;
+height: auto;
+border-radius: 20px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+transition: transform 0.3s ease;
+}
+
+.about img:hover {
+    transform: scale(1.03);
+}
+
+/*footer*/
+footer {
+background-color: var(--bg-color);
+color: var(--text-color);
+padding: 40px 20px 20px;
+border-top: var(--border);
+}
+
+.footer-container {
+max-width: 1300px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.footer-column {
+margin: 10px;
+}
+
+.footer-column h3 {
+margin-bottom: 10px;
+font-size: 18px;
+color: #fff;
+}
+
+.footer-column a {
+display: block;
+color: #ccc;
+text-decoration: none;
+margin-bottom: 5px;
+transition: all 0.3s ease;
+}
+
+.footer-column a:hover {
+color: #fff;
+text-decoration: underline;
+}
+
+.footer-bottom {
+text-align: center;
+margin-top: 20px;
+font-size: 14px;
+border-top: 1px solid #444;
+padding-top: 10px;
+}
+
+/* login;cadastro*/
+.cadastro-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: var(--primary-gray);
+}
+
+.cadastro-box {
+background-color: var(--bg-color);
+padding: 40px;
+border-radius: 12px;
+box-shadow: 0 0 15px rgba(0,0,0,0.4);
+width: 100%;
+max-width: 400px;
+transition: transform 0.3s ease;
+}
+
+.cadastro-box:hover {
+transform: translateY(-5px);
+}
+
+.cadastro-box h2 {
+margin-bottom: 20px;
+text-align: center;
+color: var(--text-color);
+}
+
+.cadastro-box input {
+width: 100%;
+padding: 12px;
+margin-bottom: 15px;
+border: 1px solid #555;
+border-radius: 6px;
+background-color: var(--secondary-gray);
+color: #fff;
+font-size: 16px;
+}
+
+.cadastro-box button {
+width: 100%;
+padding: 12px;
+background-color: #555;
+color: #fff;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease;
+}
+
+.cadastro-box button:hover {
+background-color: #777;
+}
+
+.cadastro-box p, .cadastro-box a {
+text-align: center;
+color: #ccc;
+}
+
+.cadastro-box a:hover {
+color: #fff;
+text-decoration: underline;
+}
+
+.cadastro-msg {
+color: #ff4d4d;
+font-size: 14px;
+text-align: center;
+margin-top: 10px;
+}
